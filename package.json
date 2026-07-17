@@ -1,0 +1,16 @@
+{
+  "name": "aadi-shakti-electrical-and-plumbing",
+  "version": "1.0.0",
+  "description": "Aadi Shakti Electrical & Plumbing Services delivers reliable electrical work, plumbing repairs, and emergency support.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "echo 'No build step required'",
+    "lint": "echo 'No linting required'",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

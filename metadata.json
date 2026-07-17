@@ -1,0 +1,8 @@
+{
+  "name": "Aadi Shakti",
+  "description": "Aadi Shakti Electrical & Plumbing Services delivers reliable electrical work, plumbing repairs, and emergency support with fair pricing and quick response.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,1964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Aadi Shakti Electrical & Plumbing Services</title>
+    <meta
+        content="Aadi Shakti Electrical & Plumbing Services delivers reliable electrical work, plumbing repairs, and emergency support with fair pricing and quick response."
+        name="description" />
+    <meta content="Aadi Shakti Electrical & Plumbing Services" property="og:title" />
+    <meta
+        content="Reliable electrical work, plumbing repairs, and emergency support for homes and businesses in Mukteshwar and nearby areas."
+        property="og:description" />
+    <meta content="images/aadi_shakti_logo.jpg" property="og:image" />
+    <meta content="Aadi Shakti Electrical & Plumbing Services" property="twitter:title" />
+    <meta
+        content="Reliable electrical work, plumbing repairs, and emergency support for homes and businesses in Mukteshwar and nearby areas."
+        property="twitter:description" />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    <style>
+    /* ===== FLOATING WHATSAPP BUTTON ===== */
+    .whatsapp-float-btn {
+        position: fixed !important;
+        bottom: 30px !important;
+        right: 30px !important;
+        background-color: #25d366 !important;
+        color: #ffffff !important;
+        width: 56px !important;
+        height: 56px !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+        z-index: 999999 !important;
+        text-decoration: none !important;
+        transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+        cursor: pointer !important;
+    }
+
+    .whatsapp-float-btn .whatsapp-icon {
+        width: 32px !important;
+        height: 32px !important;
+    }
+
+    .whatsapp-float-btn:hover {
+        transform: scale(1.1) !important;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4) !important;
+        background-color: #128c7e !important;
+    }
+
+    .whatsapp-float-btn:active {
+        transform: scale(0.95) !important;
+    }
+
+    /* Pulsing effect to draw subtle attention */
+    .whatsapp-float-btn::after {
+        content: '' !important;
+        position: absolute !important;
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 50% !important;
+        border: 2px solid #25d366 !important;
+        top: 0 !important;
+        left: 0 !important;
+        animation: whatsappPulse 2s infinite ease-out !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+
+    @keyframes whatsappPulse {
+        0% {
+            transform: scale(1);
+            opacity: 0.8;
+        }
+        100% {
+            transform: scale(1.5);
+            opacity: 0;
+        }
+    }
+
+    /* Make it small but highly usable on mobile */
+    @media screen and (max-width: 767px) {
+        .whatsapp-float-btn {
+            bottom: 20px !important;
+            right: 20px !important;
+            width: 48px !important;
+            height: 48px !important;
+        }
+        .whatsapp-float-btn .whatsapp-icon {
+            width: 26px !important;
+            height: 26px !important;
+        }
+    }
+
+    /* ===== CONTACT SUBMIT BUTTON ENHANCEMENT ===== */
+    .contact-submit-btn {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 56px !important;
+        border-radius: 10px !important;
+        background-color: var(--dark) !important;
+        color: var(--light) !important;
+        font-family: Outfit, sans-serif !important;
+        font-weight: 600 !important;
+        font-size: 16px !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1.5px !important;
+        border: 2px solid var(--dark) !important;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+        cursor: pointer !important;
+        margin-top: 15px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    .contact-submit-btn:hover {
+        background-color: #333 !important;
+        border-color: #333 !important;
+        color: #fff !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
+    }
+
+    .contact-submit-btn:active {
+        transform: translateY(1px) !important;
+    }
+
+    /* ===== WORK GALLERY GRID ===== */
+    .work-gallery-grid {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        grid-column-gap: 30px !important;
+        grid-row-gap: 30px !important;
+        margin-top: 40px !important;
+        margin-bottom: 20px !important;
+        width: 100% !important;
+    }
+
+    .work-gallery-item {
+        opacity: 1;
+        transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    /* Override margins of original project blocks when inside our grid */
+    .work-gallery-item .project-block {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+    }
+
+    /* View More Button Container */
+    .view-more-container {
+        display: none !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        margin-top: 35px !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Responsive states */
+    @media screen and (max-width: 991px) {
+        .work-gallery-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+            grid-column-gap: 20px !important;
+            grid-row-gap: 20px !important;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .work-gallery-grid {
+            grid-template-columns: 1fr !important;
+            grid-column-gap: 20px !important;
+            grid-row-gap: 20px !important;
+        }
+        
+        .view-more-container {
+            display: flex !important;
+        }
+        
+        /* Hide classes beyond 4th on mobile by default */
+        .work-gallery-grid .work-gallery-item.hidden-mobile {
+            display: none !important;
+        }
+    }
+    </style>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="images/aadi_shakti_logo.jpg" rel="shortcut icon" type="image/x-icon" />
+    <link href="images/aadi_shakti_logo.jpg" rel="apple-touch-icon" />
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Aadi Shakti Electrical & Plumbing Services",
+            "url": "https://www.instagram.com/adishakti_007/",
+            "description": "Aadi Shakti Electrical & Plumbing Services delivers reliable electrical work, plumbing repairs, and emergency support.",
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5.0",
+                "bestRating": "5"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Bhateliya, Mukteshwar",
+                "addressLocality": "District Nainital",
+                "addressRegion": "Uttarakhand",
+                "postalCode": "263132",
+                "addressCountry": "IN"
+            },
+            "telephone": "+91 7500975067",
+            "founder": {
+                "@type": "Person",
+                "name": "Aadi Shakti Team",
+                "jobTitle": "Electrical and Plumbing Specialists"
+            },
+            "member": [{
+                    "@type": "Person",
+                    "name": "Deepak Singh Dangwal",
+                    "jobTitle": "Lead Electrician"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Pawan Nayal",
+                    "jobTitle": "Senior Plumber"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Deepak Singh Dangwal",
+                    "jobTitle": "Emergency Coordinator"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Kamal Singh Dangwal",
+                    "jobTitle": "Maintenance Supervisor"
+                }
+            ]
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://api.whatsapp.com/send?phone=917500975067&text=Hello!%20I%20need%20electrical%20or%20plumbing%20assistance." 
+       target="_blank" 
+       class="whatsapp-float-btn" 
+       aria-label="Contact us on WhatsApp">
+        <svg viewBox="0 0 24 24" class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" style="width:32px; height:32px; display:block;">
+            <path fill="#FFF" d="M19.005 4.908A9.836 9.836 0 0 0 11.97 1.95c-5.461 0-9.91 4.454-9.914 9.917a9.897 9.897 0 0 0 1.312 4.957L2 22l5.316-1.393a9.882 9.882 0 0 0 4.65 1.169h.004c5.46 0 9.91-4.45 9.914-9.917a9.863 9.863 0 0 0-2.88-7.009zm-7.035 15.08a8.082 8.082 0 0 1-4.128-1.133l-.296-.176-3.07.805.82-2.996-.192-.307a8.093 8.093 0 0 1-1.242-4.316c0-4.472 3.64-8.113 8.117-8.113a8.064 8.064 0 0 1 5.736 2.38 8.07 8.07 0 0 1 2.378 5.74c-.004 4.474-3.644 8.115-8.12 8.115zm4.453-6.09c-.244-.122-1.44-.712-1.663-.794-.223-.08-.386-.122-.549.123-.162.244-.63.794-.772.956-.142.163-.284.183-.528.061-.243-.122-1.026-.378-1.954-1.206-.723-.645-1.21-1.442-1.352-1.686-.142-.244-.015-.376.107-.497.11-.11.244-.285.365-.427.122-.142.163-.244.244-.407.08-.163.04-.305-.02-.427-.06-.122-.549-1.322-.752-1.81-.198-.477-.4-.413-.549-.42-.143-.007-.305-.007-.468-.007-.162 0-.427.06-.65.305-.224.244-.854.834-.854 2.035s.874 2.36 1.0 2.522c.121.163 1.718 2.624 4.16 3.68.581.252 1.034.402 1.39.515.584.185 1.115.159 1.535.096.467-.07 1.44-.589 1.643-1.159.203-.57.203-1.057.142-1.159-.06-.101-.223-.162-.467-.284z"/>
+        </svg>
+    </a>
+    <div class="page-wrapper">
+        <div class="main-wrapper">
+            <header id="Main-Header" class="main-header">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="header-main-box">
+                        <div><a href="/" aria-current="page" class="logo-link w-inline-block w--current"><img
+                                    src="images/aadi_shakti_logo.jpg" loading="lazy" alt="Aadi Shakti Logo"
+                                    class="logo-icon" />
+                                <p class="logo-text">Aadi Shakti</p>
+                            </a></div>
+                        <div class="header-menu-box-two"></div>
+                        <div class="header-btn-box">
+                            <div class="header-btn-wrap">
+                                <a href="#Contact-Section"
+                                    class="theme-button w-inline-block">
+                                    <div class="theme-button-content">
+                                        <div class="theme-button-text">Book Service</div>
+                                        <div class="theme-button-hover-text">Book Service</div>
+                                    </div>
+                                </a>
+                            </div>
+                                <div class="mobile-menu-open-btn" onclick="document.querySelector('.mobile-menu').classList.add('active'); document.querySelector('.mobile-menu-overlay').classList.add('active');"><img
+                                    loading="lazy" src="images/icon-menu.png" alt="Menu"
+                                    class="header-menu-icon" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-menu-wrap">
+                    <div class="header-menu-box"><a href="#Hero-Section" class="header-menu-link">Home</a><a
+                            href="#About-Section" class="header-menu-link">About Us</a><a href="#Service-Section"
+                            class="header-menu-link">Services</a><a
+                            href="#Contact-Section" class="header-menu-link">Contact Us</a>
+                    </div>
+                </div>
+                <div class="mobile-menu">
+                    <div class="mobile-logo-box"><a href="/" aria-current="page"
+                            class="logo-link w-inline-block w--current"><img src="images/aadi_shakti_logo.jpg"
+                                loading="lazy" alt="Aadi Shakti Logo" class="logo-icon" />
+                            <p class="logo-text">Aadi Shakti</p>
+                        </a><img loading="lazy" alt="Close Menu"
+                            src="images/icon-close.png" class="mobile-menu-close-btn" onclick="document.querySelector('.mobile-menu').classList.remove('active'); document.querySelector('.mobile-menu-overlay').classList.remove('active');" /></div>
+                    
+                    <div class="mobile-profile-section">
+                        <div class="mobile-profile-image">
+                            <img src="images/aadi_shakti_logo.jpg" loading="lazy" alt="Aadi Shakti Profile" class="profile-avatar" />
+                        </div>
+                        <div class="mobile-profile-content">
+                            <h2 class="mobile-profile-greeting">Namaste, we are</h2>
+                            <h1 class="mobile-profile-name">Aadi Shakti</h1>
+                            <p class="mobile-profile-title">Electrical &amp; Plumbing Services</p>
+                            <p class="mobile-profile-bio">Reliable electrical, plumbing, and emergency solutions for homes and businesses.</p>
+                        </div>
+                    </div>
+
+                    <div class="mobile-menu-divider"></div>
+                    
+                    <div class="mobile-menu-box">
+                        <a href="#Hero-Section" onclick="document.querySelector('.mobile-menu').classList.remove('active'); document.querySelector('.mobile-menu-overlay').classList.remove('active');"
+                            class="mobile-menu-link w-inline-block">
+                            <div class="mobile-dropdown-title">Home</div>
+                        </a>
+                        <a href="#About-Section" onclick="document.querySelector('.mobile-menu').classList.remove('active'); document.querySelector('.mobile-menu-overlay').classList.remove('active');"
+                            class="mobile-menu-link w-inline-block">
+                            <div class="mobile-dropdown-title">About Us</div>
+                        </a>
+                        <a href="#Service-Section" onclick="document.querySelector('.mobile-menu').classList.remove('active'); document.querySelector('.mobile-menu-overlay').classList.remove('active');"
+                            class="mobile-menu-link w-inline-block">
+                            <div class="mobile-dropdown-title">Services</div>
+                        </a>
+                        <a href="#Contact-Section" onclick="document.querySelector('.mobile-menu').classList.remove('active'); document.querySelector('.mobile-menu-overlay').classList.remove('active');"
+                            class="mobile-menu-link w-inline-block">
+                            <div class="mobile-dropdown-title">Contact Us</div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Mobile Menu Overlay -->
+                <div class="mobile-menu-overlay" onclick="document.querySelector('.mobile-menu').classList.remove('active'); this.classList.remove('active');"></div>
+            </header>
+            <section id="Hero-Section" class="hero-section">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="hero-wrapper">
+                        <div class="w-layout-grid hero-grid">
+                            <div class="hero-content-box">
+                                <div class="section-subtitle-box">
+                                    <div class="section-subtitle-icon"></div>
+                                    <p class="section-subtitle">Electrical &amp; Plumbing Services</p>
+                                </div>
+                                <h1 class="hero-title">Reliable
+                                    <span class="section-title-style">Home Services</span></h1>
+                                <p class="hero-text">
+                                    We provide dependable electrical repairs, plumbing support, and emergency service
+                                    with fair pricing and careful workmanship for homes and businesses.<br /></p>
+                                <div class="hero-btn-box">
+                                    <a href="#Contact-Section"
+                                        class="theme-button w-inline-block">
+                                        <div class="theme-button-content">
+                                            <div class="theme-button-text">Book Service</div>
+                                            <div class="theme-button-hover-text">Book Service</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="hero-rating-wrap">
+                                        <div class="hero-author-box"><img loading="lazy"
+                                            src="images/avatar-1.avif" alt=""
+                                            class="hero-author-img first" /><img loading="lazy"
+                                            src="images/avatar-2.avif" alt=""
+                                            class="hero-author-img" /><img loading="lazy"
+                                            src="images/avatar-3.avif" alt=""
+                                            class="hero-author-img" /></div>
+                                    <div class="hero-rating-box">
+                                        <div class="rating-box-two">
+                                            <p class="rating-count">24/7</p>
+                                        </div>
+                                        <p class="hero-rating-text">Electrical, plumbing, and emergency support</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hero-images-wrapper">
+                                <div data-delay="5000" data-animation="slide" class="hero-slider w-slider"
+                                    data-autoplay="true" data-easing="ease" data-hide-arrows="false"
+                                    data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3"
+                                    data-duration="500" data-infinite="true">
+                                    <div class="hero-mask w-slider-mask">
+                                        <div
+                                            class="hero-slide w-slide">
+                                                <div class="hero-image-box"><img src="images/home_working_project.jpg" loading="lazy"
+                                                    alt="Electrical repair service in home" class="hero-image" referrerPolicy="no-referrer" />
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="hero-slide w-slide">
+                                                <div class="hero-image-box"><img src="images/hero-plumbing.png" loading="lazy"
+                                                    alt="Plumbing service" class="hero-image" /></div>
+                                        </div>
+                                        <div
+                                            class="hero-slide w-slide">
+                                                <div class="hero-image-box"><img src="images/emergency_services.jpg" loading="lazy"
+                                                    alt="Emergency service support" class="hero-image" referrerPolicy="no-referrer" /></div>
+                                        </div>
+                                    </div>
+                                    <div class="hero-arrow w-slider-arrow-left">
+                                        <div class="w-icon-slider-left"></div>
+                                    </div>
+                                    <div class="hero-arrow w-slider-arrow-right">
+                                        <div class="w-icon-slider-right"></div>
+                                    </div>
+                                    <div class="hero-nav w-slider-nav w-round w-num"></div>
+                                </div>
+                                <div class="hero-play-box">
+                                    <div class="hero-play-line-box">
+                                        <div class="hero-play-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="About-Section" class="about-section">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="w-layout-grid about-grid">
+                        <div class="about-content-box">
+                            <div class="section-title-box">
+                                <div class="section-subtitle-box">
+                                    <div class="section-subtitle-icon"></div>
+                                    <p class="section-subtitle">Who We Are</p>
+                                </div>
+                                <h2 class="section-title about">Join Hands, <span class="section-title-style">Solve
+                                        It Right</span></h2>
+                                <p class="section-text">Aadi Shakti Electrical &amp; Plumbing Services handles day-to-day
+                                    fixes and urgent callouts with the same focus on safety, speed, and transparent
+                                    pricing. We support homes, shops, and local properties with dependable on-site
+                                    service.
+                                </p>
+                            </div>
+                            <div class="about-author-box"><img loading="lazy" src="images/about-team.png"
+                                    alt="Aadi Shakti Team" class="about-author-image" />
+                                <div class="about-author-info">
+                                    <p class="about-author-name">Local Service Team</p>
+                                    <p class="about-author-designation">Electrical &amp; Plumbing Specialists</p><img loading="lazy"
+                                        src="images/star.avif"
+                                        alt="" class="about-author-sign" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-image-box w-clearfix"><img
+                                loading="lazy" src="images/about-working.png" alt="Electrical work in progress"
+                                class="about-image" /><img loading="lazy" src="images/indian-developer-1.jpg"
+                                alt="Service team collaboration" class="about-image two" /><img
+                                loading="lazy"
+                                alt="Stylized orange star icon with jagged edges on a white background."
+                                src="images/star.avif" class="about-star-icon" />
+                            <a href="#Service-Section"
+                                class="circle-box w-inline-block">
+                                <div style="-webkit-transform:translate3d(0, -10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                    class="circle-inner">
+                                    <div style="color:rgb(10,10,10)" class="circle-box-icon"></div>
+                                </div>
+                                <div class="circle-text">Explore<br />Services</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="Service-Section" class="service-section">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="section-title-box center">
+                        <div class="section-subtitle-box">
+                            <div class="section-subtitle-icon"></div>
+                            <p class="section-subtitle">Our Services</p>
+                        </div>
+                        <h2 class="section-title">We handle fast, reliable<span class="section-title-br">
+                            </span><span class="section-title-style">Home Services</span></h2>
+                        <p class="section-text">From wiring fixes to leak repairs, we offer complete
+                            electrical and plumbing solutions<span class="section-text-br"> </span>for homes and
+                            businesses.
+                        </p>
+                    </div>
+                    <div class="service-outer">
+                        <div class="service-collection-list w-dyn-list">
+                            <div role="list" class="w-dyn-items">
+                                <div role="listitem" class="w-dyn-item">
+                                    <a href="#Contact-Section"
+                                        class="service-block w-inline-block">
+                                        <div class="service-content-box">
+                                            <h3 class="service-title">Electrical Wiring & Repairs</h3>
+                                            <p class="service-text">We resolve wiring issues, power faults, switches,
+                                                and fittings with safe on-site service and tidy workmanship.
+                                            </p>
+                                            <div class="service-readmore">
+                                                <div class="service-readmore-text">Learn More</div>
+                                                <div class="service-readmore-icon"></div>
+                                            </div>
+                                            <div class="service-category-box">
+                                                <div class="service-category">
+                                                    <div class="service-category-text">Wiring</div>
+                                                </div>
+                                                <div class="service-category">
+                                                    <div class="service-category-text">Fault Fix</div>
+                                                </div>
+                                                <div class="service-category">
+                                                    <div class="service-category-text">Lighting</div>
+                                                </div>
+                                                <div class="service-category">
+                                                    <div class="service-category-text">Safety</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="service-image-box">
+                                            <div class="service-image-link"><img loading="lazy"
+                                                    src="images/electrical_wiring_repair.jpg" alt="Electrical wiring service"
+                                                    sizes="100vw" class="service-image" referrerPolicy="no-referrer" /></div>
+                                            <div class="service-icon-box"><img loading="lazy"
+                                                    src="images/icon-rocket.avif" alt=""
+                                                    class="service-icon" /></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-collection-list w-dyn-list">
+                            <div role="list" class="w-dyn-items">
+                                <div role="listitem" class="w-dyn-item">
+                                    <a
+                                        href="#Contact-Section"
+                                        class="service-block w-inline-block">
+                                        <div class="service-content-box">
+                                            <h3 class="service-title">Plumbing Repairs & Installations</h3>
+                                            <p class="service-text">We fix leaks, taps, pipes, and fittings with
+                                                dependable installation and repair work that keeps water flowing
+                                                properly.</p>
+                                            <div class="service-readmore">
+                                                <div class="service-readmore-text">Learn More</div>
+                                                <div class="service-readmore-icon"></div>
+                                            </div>
+                                            <div class="service-category-box">
+                                                <div class="service-category">
+                                                    <div class="service-category-text">Pipes</div>
+                                                </div>
+                                                <div class="service-category">
+                                                    <div class="service-category-text">Leak Fix</div>
+                                                </div>
+                                                <div class="service-category">
+                                                    <div class="service-category-text">Taps</div>
+                                                </div>
+                                                <div class="service-category">
+                                                    <div class="service-category-text">Installation</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="service-image-box">
+                                            <div class="service-image-link"><img loading="lazy"
+                                                    src="images/plumbing_repair_work.jpg" alt="Plumbing service"
+                                                    sizes="100vw" class="service-image" referrerPolicy="no-referrer" /></div>
+                                            <div class="service-icon-box"><img loading="lazy"
+                                                    src="images/icon-globe.avif" alt=""
+                                                    class="service-icon" /></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-collection-list w-dyn-list">
+                            <div role="list" class="w-dyn-items">
+                                <div role="listitem" class="w-dyn-item">
+                                    <a href="#Contact-Section"
+                                        class="service-block w-inline-block">
+                                        <div class="service-content-box">
+                                            <h3 class="service-title">Emergency Services</h3>
+                                            <p class="service-text">When something needs urgent attention, we respond
+                                                quickly to restore safety and get your home or shop back on track.</p>
+                                            <div class="service-readmore">
+                                                <div class="service-readmore-text">Learn More</div>
+                                                <div class="service-readmore-icon"></div>
+                                            </div>
+                                            <div class="service-category-box">
+                                                <div class="service-category">
+                                                    <div class="service-category-text">24/7</div>
+                                                </div>
+                                                <div class="service-category">
+                                                    <div class="service-category-text">Urgent</div>
+                                                </div>
+                                                <div class="service-category">
+                                                    <div class="service-category-text">Fast</div>
+                                                </div>
+                                                <div class="service-category">
+                                                    <div class="service-category-text">Safe</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="service-image-box">
+                                            <div class="service-image-link"><img loading="lazy"
+                                                    src="images/emergency_services.jpg" alt="Emergency service"
+                                                    sizes="100vw" class="service-image" referrerPolicy="no-referrer" /></div>
+                                            <div class="service-icon-box"><img loading="lazy"
+                                                    src="images/icon-phone.avif" alt=""
+                                                    class="service-icon" /></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-collection-list w-dyn-list">
+                            <div role="list" class="w-dyn-items">
+                                <div role="listitem" class="w-dyn-item">
+                                    <a
+                                        href="#Contact-Section" class="service-block w-inline-block">
+                                        <div class="service-content-box">
+                                            <h3 class="service-title">Preventive Maintenance</h3>
+                                            <p class="service-text">Regular checks help prevent leaks, short circuits,
+                                                and surprise breakdowns before they become expensive problems.</p>
+                                            <div class="service-readmore">
+                                                <div class="service-readmore-text">Learn More</div>
+                                                <div class="service-readmore-icon"></div>
+                                            </div>
+                                            <div class="service-category-box">
+                                                <div class="service-category">
+                                                    <div class="service-category-text">Checks</div>
+                                                </div>
+                                                <div class="service-category">
+                                                    <div class="service-category-text">Service</div>
+                                                </div>
+                                                <div class="service-category">
+                                                    <div class="service-category-text">Safety</div>
+                                                </div>
+                                                <div class="service-category">
+                                                    <div class="service-category-text">Support</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="service-image-box">
+                                            <div class="service-image-link"><img loading="lazy"
+                                                    src="images/services.png" alt="Service and maintenance"
+                                                    class="service-image" /></div>
+                                            <div class="service-icon-box"><img loading="lazy"
+                                                    src="images/icon-ppc.svg" alt=""
+                                                    class="service-icon" /></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="funfact-section">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="w-layout-grid funfact-grid">
+
+                        <div class="counter-wrapper">
+                            <div class="counter-box left">
+                                <div class="counter-icon-box two"><img src="images/icon-trophy.avif" loading="lazy"
+                                        alt="Trophy" class="counter-icon" /></div>
+                                <div class="counter-bottom-box">
+                                    <div class="counter-title-box">
+                                        <h3 class="counter-title">Core Services</h3>
+                                        <p class="counter-text">Electrical, plumbing, and emergency support.
+                                        </p>
+                                    </div>
+                                    <div class="counter-wrap">
+                                        <div class="count-number-wrap left">
+                                            <h3 class="count-number">3+</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="counter-box left">
+                                <div class="counter-icon-box two"><img src="images/icon-globe.avif" loading="lazy"
+                                        alt="Globe" class="counter-icon" /></div>
+                                <div class="counter-bottom-box">
+                                    <div class="counter-title-box">
+                                        <h3 class="counter-title">Response</h3>
+                                        <p class="counter-text">Quick help when urgent issues come up.
+                                        </p>
+                                    </div>
+                                    <div class="counter-wrap">
+                                        <div class="count-number-wrap left">
+                                            <h3 class="count-number">24/7</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="w-node-_639f3377-8a44-85b4-250d-d6b99c9eee14-02f39ae8" class="funfact-center-box">
+                            <div
+                                class="section-title-box center mb-zero">
+                                <div class="section-subtitle-box">
+                                    <div class="section-subtitle-icon"></div>
+                                    <p class="section-subtitle">Our Impact</p>
+                                </div>
+                                <h2 class="section-title funfact">Numbers That Show <span
+                                    class="section-title-style">Our Reach</span></h2>
+                                <p class="section-text">We help families and local businesses stay safe,
+                                    comfortable, and connected with dependable service.</p>
+                            </div>
+                        </div>
+                        <div class="counter-wrapper">
+                            <div class="counter-box">
+                                <div class="counter-icon-box"><img src="images/icon-rocket.avif" loading="lazy"
+                                        alt="Orange rocket icon launching with blue flames against a white background."
+                                        class="counter-icon" /></div>
+                                <div class="counter-bottom-box">
+                                    <div class="counter-title-box">
+                                        <h3 class="counter-title">Jobs Completed</h3>
+                                        <p class="counter-text">Repairs and service visits handled carefully.
+                                        </p>
+                                    </div>
+                                    <div class="counter-wrap">
+                                        <div class="count-number-wrap">
+                                            <h3 class="count-number">100+</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="w-node-_986cb471-6805-ae3b-652a-2b8405a3f956-02f39ae8" class="counter-box">
+                                <div class="counter-icon-box"><img src="images/icon-people.avif" loading="lazy"
+                                        alt="Group of diverse professionals collaborating in a modern office with laptops and coffee cups."
+                                        class="counter-icon" /></div>
+                                <div class="counter-bottom-box">
+                                    <div class="counter-title-box">
+                                        <h3 class="counter-title">Satisfied Customers</h3>
+                                        <p class="counter-text">Friendly service and fair pricing every time.</p>
+                                    </div>
+                                    <div class="counter-wrap">
+                                        <div class="count-number-wrap">
+                                            <h3 class="count-number">100%</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="client-section">
+                <div class="w-layout-blockcontainer container w-container">
+                    <p class="client-title">Trusted by Leading Companies</p>
+                    <div class="client-outer-box">
+                        <div class="client-blocks-outer">
+                            <div class="client-blocks-box">
+                                <div class="client-block"><img loading="lazy"
+                                    src="images/client-logo-1.avif" alt="" class="client-image" />
+                                </div>
+                                <div class="client-block"><img loading="lazy"
+                                    src="images/client-logo-2.avif" alt="" class="client-image" />
+                                </div>
+                                <div class="client-block"><img loading="lazy"
+                                    src="images/client-logo-3.avif" alt="" class="client-image" />
+                                </div>
+                                <div class="client-block"><img loading="lazy"
+                                    src="images/client-logo-4.avif" alt="" class="client-image" />
+                                </div>
+                                <div class="client-block"><img loading="lazy"
+                                    src="images/client-logo-5.avif" alt="" class="client-image" />
+                                </div>
+                                <div class="client-block"><img loading="lazy"
+                                    src="images/client-logo-6.avif" alt="" class="client-image" />
+                                </div>
+                            </div>
+                            <div class="client-blocks-box">
+                                <div class="client-block"><img loading="lazy"
+                                    src="images/client-logo-1.avif" alt="" class="client-image" />
+                                </div>
+                                <div class="client-block"><img loading="lazy"
+                                    src="images/client-logo-2.avif" alt="" class="client-image" />
+                                </div>
+                                <div class="client-block"><img loading="lazy"
+                                    src="images/client-logo-3.avif" alt="" class="client-image" />
+                                </div>
+                                <div class="client-block"><img loading="lazy"
+                                    src="images/client-logo-4.avif" alt="" class="client-image" />
+                                </div>
+                                <div class="client-block"><img loading="lazy"
+                                    src="images/client-logo-5.avif" alt="" class="client-image" />
+                                </div>
+                                <div class="client-block"><img loading="lazy"
+                                    src="images/client-logo-6.avif" alt="" class="client-image" />
+                                </div>
+                            </div>
+                            <div class="client-blocks-box">
+                                <div class="client-block"><img loading="lazy"
+                                    src="images/client-logo-1.avif" alt="" class="client-image" />
+                                </div>
+                                <div class="client-block"><img loading="lazy"
+                                    src="images/client-logo-2.avif" alt="" class="client-image" />
+                                </div>
+                                <div class="client-block"><img loading="lazy"
+                                    src="images/client-logo-3.avif" alt="" class="client-image" />
+                                </div>
+                                <div class="client-block"><img loading="lazy"
+                                    src="images/client-logo-4.avif" alt="" class="client-image" />
+                                </div>
+                                <div class="client-block"><img loading="lazy"
+                                    src="images/client-logo-5.avif" alt="" class="client-image" />
+                                </div>
+                                <div class="client-block"><img loading="lazy"
+                                    src="images/client-logo-6.avif" alt="" class="client-image" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="client-gradient"></div>
+                        <div class="client-gradient two"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="project-section pb-zero">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="section-title-box">
+                        <div class="section-subtitle-box">
+                            <div class="section-subtitle-icon"></div>
+                            <p class="section-subtitle">Our Work</p>
+                        </div>
+                        <h2 class="section-title">Service Highlights <span
+                            class="section-title-style">You Can Rely On</span></h2>
+                        <p class="section-text">Take a quick look at the kinds of electrical and plumbing jobs
+                            we handle<span
+                            class="section-text-br"> </span>across homes, shops, and local properties.</p>
+                    </div>
+                    <div class="work-gallery-grid">
+                        <!-- Card 1: Electrical Wiring -->
+                        <div class="work-gallery-item">
+                            <div class="project-block">
+                                <div class="project-image-box">
+                                    <img loading="lazy" alt="Electrical Wiring" src="images/electrical_wiring_repair.jpg" class="project-image" referrerPolicy="no-referrer" />
+                                    <div class="project-shape-box">
+                                        <img loading="lazy" src="images/6870f7ebeccf3fc95b60dc71_svgviewer-output.svg" alt="" class="project-shape" />
+                                        <img loading="lazy" src="images/6870f7ebeccf3fc95b60dc71_svgviewer-output.svg" alt="" class="project-shape-two" />
+                                        <h3 class="project-title">Electrical Wiring</h3>
+                                    </div>
+                                </div>
+                                <div class="project-content-box">
+                                    <p class="project-text">Safe, neat wiring fixes and new points for homes and shops.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Plumbing Repairs -->
+                        <div class="work-gallery-item">
+                            <div class="project-block">
+                                <div class="project-image-box">
+                                    <img loading="lazy" alt="Plumbing Repairs" src="images/plumbing_repair_work.jpg" class="project-image" referrerPolicy="no-referrer" />
+                                    <div class="project-shape-box">
+                                        <img loading="lazy" src="images/6870f7ebeccf3fc95b60dc71_svgviewer-output.svg" alt="" class="project-shape" />
+                                        <img loading="lazy" src="images/6870f7ebeccf3fc95b60dc71_svgviewer-output.svg" alt="" class="project-shape-two" />
+                                        <h3 class="project-title">Plumbing Repairs</h3>
+                                    </div>
+                                </div>
+                                <div class="project-content-box">
+                                    <p class="project-text">Leak fixes, fittings, and installation support for water lines.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Emergency Support -->
+                        <div class="work-gallery-item">
+                            <div class="project-block">
+                                <div class="project-image-box">
+                                    <img loading="lazy" alt="Emergency Support" src="images/emergency_services.jpg" class="project-image" referrerPolicy="no-referrer" />
+                                    <div class="project-shape-box">
+                                        <img loading="lazy" src="images/6870f7ebeccf3fc95b60dc71_svgviewer-output.svg" alt="" class="project-shape" />
+                                        <img loading="lazy" src="images/6870f7ebeccf3fc95b60dc71_svgviewer-output.svg" alt="" class="project-shape-two" />
+                                        <h3 class="project-title">Emergency Support</h3>
+                                    </div>
+                                </div>
+                                <div class="project-content-box">
+                                    <p class="project-text">Quick response for urgent breakdowns and safety issues.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: Preventive Checks -->
+                        <div class="work-gallery-item">
+                            <div class="project-block">
+                                <div class="project-image-box">
+                                    <img loading="lazy" alt="Preventive Checks" src="images/preventive_maintenance.jpg" class="project-image" referrerPolicy="no-referrer" />
+                                    <div class="project-shape-box">
+                                        <img loading="lazy" src="images/6870f7ebeccf3fc95b60dc71_svgviewer-output.svg" alt="" class="project-shape" />
+                                        <img loading="lazy" src="images/6870f7ebeccf3fc95b60dc71_svgviewer-output.svg" alt="" class="project-shape-two" />
+                                        <h3 class="project-title">Preventive Checks</h3>
+                                    </div>
+                                </div>
+                                <div class="project-content-box">
+                                    <p class="project-text">Routine checks that help prevent future faults and leaks.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 5: Pump & Tank Support -->
+                        <div class="work-gallery-item hidden-mobile">
+                            <div class="project-block">
+                                <div class="project-image-box">
+                                    <img loading="lazy" alt="Pump & Tank Support" src="images/pump_tank_installation.jpg" class="project-image" referrerPolicy="no-referrer" />
+                                    <div class="project-shape-box">
+                                        <img loading="lazy" src="images/6870f7ebeccf3fc95b60dc71_svgviewer-output.svg" alt="" class="project-shape" />
+                                        <img loading="lazy" src="images/6870f7ebeccf3fc95b60dc71_svgviewer-output.svg" alt="" class="project-shape-two" />
+                                        <h3 class="project-title">Pump &amp; Tank Support</h3>
+                                    </div>
+                                </div>
+                                <div class="project-content-box">
+                                    <p class="project-text">Support for water tanks, pumps, and related fittings.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 6: General Maintenance -->
+                        <div class="work-gallery-item hidden-mobile">
+                            <div class="project-block">
+                                <div class="project-image-box">
+                                    <img loading="lazy" alt="General Maintenance" src="images/lighting_installation.jpg" class="project-image" referrerPolicy="no-referrer" />
+                                    <div class="project-shape-box">
+                                        <img loading="lazy" src="images/6870f7ebeccf3fc95b60dc71_svgviewer-output.svg" alt="" class="project-shape" />
+                                        <img loading="lazy" src="images/6870f7ebeccf3fc95b60dc71_svgviewer-output.svg" alt="" class="project-shape-two" />
+                                        <h3 class="project-title">General Maintenance</h3>
+                                    </div>
+                                </div>
+                                <div class="project-content-box">
+                                    <p class="project-text">General repair support for everyday electrical and plumbing needs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- View More Toggle for Mobile -->
+                    <div class="view-more-container">
+                        <button id="gallery-toggle-btn" class="theme-button w-inline-block" style="border: none; padding: 14px 28px; cursor: pointer; display: inline-flex;">
+                            <div class="theme-button-content">
+                                <div class="theme-button-text" id="gallery-btn-text">View More</div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="team-section">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="section-title-outer">
+                        <div class="section-title-box team-title-box">
+                            <div class="section-subtitle-box">
+                                <div class="section-subtitle-icon"></div>
+                                <p class="section-subtitle">Why Choose Us</p>
+                            </div>
+                                <h2 class="section-title">Skilled <span class="section-title-style">on-site service</span><span
+                                        class="section-title-br"> </span>you can trust</h2>
+                                <p class="section-text">We focus on careful workmanship, quick support, and clear
+                                    communication from the first call to the final fix.
+                            </p>
+                        </div>
+                        <div class="team-rating-box">
+                            <div class="rating-box">
+                                <div class="rating-content">
+                                    <p class="rating">4.9<span class="text-span">/5</span></p>
+                                    <p class="rating-text">Local service rating.</p>
+                                    <div class="rating-star-box"><img loading="lazy"
+                                            src="images/star.avif" alt=""
+                                            class="rating-star" /><img loading="lazy"
+                                            src="images/star.avif" alt=""
+                                            class="rating-star" /><img loading="lazy"
+                                            src="images/star.avif" alt=""
+                                            class="rating-star" /><img loading="lazy"
+                                            src="images/star.avif" alt=""
+                                            class="rating-star" /><img loading="lazy"
+                                            src="images/star.avif" alt="" class="rating-star" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-dyn-list">
+                        <div role="list" class="team-collection-list w-dyn-items">
+                            <div role="listitem" class="w-dyn-item">
+                                <a href="#Contact-Section"
+                                    class="team-block w-inline-block">
+                                    <div class="team-image-box">
+                                        <div class="team-image-link"><img src="images/deepak_dangwal_1784315350768.jpg" loading="lazy"
+                                                style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform-style:preserve-3d"
+                                                alt="Deepak Singh Dangwal - Lead Electrician" class="team-image" referrerPolicy="no-referrer" /></div>
+                                        <div class="social-list-outer">
+                                            <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(null, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(null, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(null, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(null, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                                class="social-list">
+                                                <div class="social-list-item">
+                                                    <div class="social-list-icon"></div>
+                                                </div>
+                                                <div class="social-list-item">
+                                                    <div class="social-list-icon"></div>
+                                                </div>
+                                                <div class="social-list-item">
+                                                    <div class="social-list-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="social-list-item two">
+                                                <div style="background-color:rgb(255,255,255);border-color:rgb(173,173,173)"
+                                                    class="social-list-icon two"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="team-designation">Lead Electrician</p>
+                                    <h3 class="tean-name">Deepak Singh Dangwal</h3>
+                                </a>
+                            </div>
+                            <div role="listitem" class="w-dyn-item">
+                                <a href="#Contact-Section"
+                                    class="team-block w-inline-block">
+                                    <div class="team-image-box">
+                                        <div class="team-image-link"><img src="images/pawan_nayal_1784315625171.jpg" loading="lazy"
+                                                style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform-style:preserve-3d"
+                                                alt="Pawan Nayal - Senior Plumber" class="team-image" referrerPolicy="no-referrer" /></div>
+                                        <div class="social-list-outer">
+                                            <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(null, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(null, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(null, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(null, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                                class="social-list">
+                                                <div class="social-list-item">
+                                                    <div class="social-list-icon"></div>
+                                                </div>
+                                                <div class="social-list-item">
+                                                    <div class="social-list-icon"></div>
+                                                </div>
+                                                <div class="social-list-item">
+                                                    <div class="social-list-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="social-list-item two">
+                                                <div style="background-color:rgb(255,255,255);border-color:rgb(173,173,173)"
+                                                    class="social-list-icon two"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="team-designation">Senior Plumber</p>
+                                    <h3 class="tean-name">Pawan Nayal</h3>
+                                </a>
+                            </div>
+                            <div role="listitem" class="w-dyn-item">
+                                <a href="#Contact-Section"
+                                    class="team-block w-inline-block">
+                                    <div class="team-image-box">
+                                        <div class="team-image-link"><img src="images/deepak_dangwal_1784315350768.jpg" loading="lazy"
+                                                style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform-style:preserve-3d"
+                                                alt="Deepak Singh Dangwal - Emergency Coordinator" class="team-image" referrerPolicy="no-referrer" /></div>
+                                        <div class="social-list-outer">
+                                            <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(null, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(null, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(null, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(null, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                                class="social-list">
+                                                <div class="social-list-item">
+                                                    <div class="social-list-icon"></div>
+                                                </div>
+                                                <div class="social-list-item">
+                                                    <div class="social-list-icon"></div>
+                                                </div>
+                                                <div class="social-list-item">
+                                                    <div class="social-list-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="social-list-item two">
+                                                <div style="background-color:rgb(255,255,255);border-color:rgb(173,173,173)"
+                                                    class="social-list-icon two"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="team-designation">Emergency Coordinator</p>
+                                    <h3 class="tean-name">Deepak Singh Dangwal</h3>
+                                </a>
+                            </div>
+                            <div role="listitem" class="w-dyn-item">
+                                <a href="#Contact-Section"
+                                    class="team-block w-inline-block">
+                                    <div class="team-image-box">
+                                        <div class="team-image-link"><img src="images/kamal_singh_dangwal_1784315450730.jpg" loading="lazy"
+                                                style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform-style:preserve-3d"
+                                                alt="Kamal Singh Dangwal - Maintenance Supervisor" class="team-image" referrerPolicy="no-referrer" /></div>
+                                        <div class="social-list-outer">
+                                            <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(null, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(null, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(null, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(null, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                                class="social-list">
+                                                <div class="social-list-item">
+                                                    <div class="social-list-icon"></div>
+                                                </div>
+                                                <div class="social-list-item">
+                                                    <div class="social-list-icon"></div>
+                                                </div>
+                                                <div class="social-list-item">
+                                                    <div class="social-list-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="social-list-item two">
+                                                <div style="background-color:rgb(255,255,255);border-color:rgb(173,173,173)"
+                                                    class="social-list-icon two"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="team-designation">Maintenance Supervisor</p>
+                                    <h3 class="tean-name">Kamal Singh Dangwal</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="review-section p-zero">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="section-title-box">
+                        <div class="section-subtitle-box">
+                            <div class="section-subtitle-icon"></div>
+                            <p class="section-subtitle">Client Feedback</p>
+                        </div>
+                        <h2 class="section-title">What Our <span class="section-title-style">Customers Say</span> About Us
+                        </h2>
+                        <p class="section-text">We are proud to help local households and businesses with service
+                            they can count on.<br /></p>
+                    </div>
+                    <div class="w-layout-grid review-grid">
+                        <div class="testi-wrapper">
+                            <div class="testimonial-block">
+                                <div class="testimonial-block-inner"><img loading="lazy"
+                                        src="images/icon-quote.png" alt=""
+                                        class="testi-quote-icon" />
+                                    <div class="testi-author-box">
+                                        <div class="testi-author-image-box"><img loading="lazy"
+                                                src="images/anita_rawat.jpg" alt="Anita Rawat" class="review-image" referrerPolicy="no-referrer" /></div>
+                                        <div class="testi-info-box">
+                                            <p class="testi-author-name">Anita Rawat</p>
+                                            <p class="testi-designation">Homeowner</p>
+                                        </div>
+                                        <div class="rating-star-box-2 two">
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                        </div>
+                                    </div>
+                                    <p class="testi-text">“They fixed our wiring issue quickly and left everything neat.
+                                        The team was polite, careful, and fairly priced. Highly recommended for home
+                                        electrical work.”
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-block">
+                                <div class="testimonial-block-inner"><img loading="lazy"
+                                        src="images/icon-quote.png" alt=""
+                                        class="testi-quote-icon" />
+                                    <div class="testi-author-box">
+                                        <div class="testi-author-image-box"><img loading="lazy"
+                                                src="images/rakesh_joshi.jpg" alt="Rakesh Joshi" class="review-image" referrerPolicy="no-referrer" /></div>
+                                        <div class="testi-info-box">
+                                            <p class="testi-author-name">Rakesh Joshi</p>
+                                            <p class="testi-designation">Shop Owner</p>
+                                        </div>
+                                        <div class="rating-star-box-2 two">
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                        </div>
+                                    </div>
+                                    <p class="testi-text">“Our leaking pipe was repaired the same day and the work has
+                                        held up perfectly. Reliable service and quick response.”
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi-wrapper">
+                            <div class="testimonial-block">
+                                <div class="testimonial-block-inner"><img loading="lazy"
+                                        src="images/icon-quote.png" alt=""
+                                        class="testi-quote-icon" />
+                                    <div class="testi-author-box">
+                                        <div class="testi-author-image-box"><img loading="lazy"
+                                                src="images/sunita_bisht.jpg" alt="Sunita Bisht" class="review-image" referrerPolicy="no-referrer" /></div>
+                                        <div class="testi-info-box">
+                                            <p class="testi-author-name">Sunita Bisht</p>
+                                            <p class="testi-designation">Resident</p>
+                                        </div>
+                                        <div class="rating-star-box-2 two">
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                        </div>
+                                    </div>
+                                    <p class="testi-text">“They handled an emergency call late in the evening and
+                                        solved the issue without any drama. That kind of support is hard to find.”</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-block">
+                                <div class="testimonial-block-inner"><img loading="lazy" src="images/icon-quote.png"
+                                        alt="" class="testi-quote-icon" />
+                                    <div class="testi-author-box">
+                                        <div class="testi-author-image-box"><img loading="lazy"
+                                                src="images/mahesh_sharma.jpg" alt="Mahesh Sharma" class="review-image" referrerPolicy="no-referrer" /></div>
+                                        <div class="testi-info-box">
+                                            <p class="testi-author-name">Mahesh Sharma</p>
+                                            <p class="testi-designation">Homeowner</p>
+                                        </div>
+                                        <div class="rating-star-box-2 two">
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                        </div>
+                                    </div>
+                                    <p class="testi-text">“Regular maintenance from Aadi Shakti has kept our water and
+                                        power systems running without surprise breakdowns.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi-wrapper">
+                            <div class="testimonial-block">
+                                <div class="testimonial-block-inner"><img loading="lazy" src="images/icon-quote.png"
+                                        alt="" class="testi-quote-icon" />
+                                    <div class="testi-author-box">
+                                        <div class="testi-author-image-box"><img loading="lazy"
+                                                src="images/neha_thakur.jpg" alt="Neha Thakur" class="review-image" referrerPolicy="no-referrer" /></div>
+                                        <div class="testi-info-box">
+                                            <p class="testi-author-name">Neha Thakur</p>
+                                            <p class="testi-designation">Business Owner</p>
+                                        </div>
+                                        <div class="rating-star-box-2 two">
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                        </div>
+                                    </div>
+                                    <p class="testi-text">“They are dependable, honest, and easy to reach when we need
+                                        plumbing or electrical help for the shop.”</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-block">
+                                <div class="testimonial-block-inner"><img loading="lazy" src="images/icon-quote.png"
+                                        alt="" class="testi-quote-icon" />
+                                    <div class="testi-author-box">
+                                        <div class="testi-author-image-box"><img loading="lazy"
+                                                src="images/deepak_rana.jpg" alt="Deepak Rana" class="review-image" referrerPolicy="no-referrer" /></div>
+                                        <div class="testi-info-box">
+                                            <p class="testi-author-name">Deepak Rana</p>
+                                            <p class="testi-designation">Local Customer</p>
+                                        </div>
+                                        <div class="rating-star-box-2 two">
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                            <div class="rating-star-2"></div>
+                                        </div>
+                                    </div>
+                                    <p class="testi-text">“Reliable, fast, and professional. They came on time and fixed
+                                        the problem without overcomplicating it.”</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="Contact-Section" class="contact-section">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="section-title-box">
+                        <div class="section-subtitle-box">
+                            <div class="section-subtitle-icon"></div>
+                            <p class="section-subtitle">Get in Touch</p>
+                        </div>
+                        <h2 class="section-title"><span class="section-title-style">Let’s connect</span> &amp; get
+                            your issue fixed</h2>
+                        <p class="section-text">Share your electrical or plumbing need and we’ll reach out to plan
+                            a quick visit or emergency support.<br /></p>
+                    </div>
+                    <div class="w-layout-grid contact-grid">
+                        <div class="contact-form-box">
+                            <div class="contact-form-block w-form">
+                                <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form"
+                                    method="get" class="contact-form" data-wf-page-id="67c557f717dc36a702f39ae8"
+                                    data-wf-element-id="734da04c-8bb2-8b30-a6ec-d9d5b5f67272"
+                                    data-turnstile-sitekey="0x4AAAAAAAQTptj2So4dx43e">
+                                    <div class="w-layout-grid contact-form-grid">
+                                        <div class="contact-form-group">
+                                            <p class="contact-label">Name *</p><input
+                                                class="contact-input w-input" maxlength="256" name="First-Name"
+                                                data-name="Name" placeholder="Your Name" type="text"
+                                                id="First-Name" required="" />
+                                        </div>
+                                        <div class="contact-form-group">
+                                            <p class="contact-label">Phone *</p><input class="contact-input w-input"
+                                                maxlength="256" name="Last-Name" data-name="Last Name"
+                                                placeholder="Phone Number" type="tel" id="Last-Name" required="" />
+                                        </div>
+                                    </div>
+                                    <div class="w-layout-grid contact-form-grid" style="grid-row-gap: 0px !important;">
+                                        <div class="contact-form-group">
+                                            <p class="contact-label">Service Needed *</p>
+                                            <select class="contact-input w-select" name="Service" id="Service-Select" required style="width: 100%; background: var(--light); color: var(--dark); border: 1px solid var(--gray); border-radius: 10px; height: 50px; padding: 0 24px; cursor: pointer; -webkit-appearance: none; -moz-appearance: none; appearance: none; background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%232c3e50%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22><polyline points=%226 9 12 15 18 9%22></polyline></svg>'); background-repeat: no-repeat; background-position: right 24px center;">
+                                                <option value="" disabled selected>Select service</option>
+                                                <option value="Electrical Support" style="color: #000;">Electrical Support</option>
+                                                <option value="Plumbing Repair" style="color: #000;">Plumbing Repair</option>
+                                                <option value="Emergency Support" style="color: #000;">Emergency Support</option>
+                                                <option value="Preventive Maintenance" style="color: #000;">Preventive Maintenance</option>
+                                            </select>
+                                        </div>
+                                        <div class="contact-form-group">
+                                            <p class="contact-label">Preferred Calling Time (Optional)</p>
+                                            <select class="contact-input w-select" name="Calling-Time" id="Calling-Time" style="width: 100%; background: var(--light); color: var(--dark); border: 1px solid var(--gray); border-radius: 10px; height: 50px; padding: 0 24px; cursor: pointer; -webkit-appearance: none; -moz-appearance: none; appearance: none; background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%232c3e50%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22><polyline points=%226 9 12 15 18 9%22></polyline></svg>'); background-repeat: no-repeat; background-position: right 24px center;">
+                                                <option value="" selected>Anytime (Optional)</option>
+                                                <option value="Morning (9 AM - 12 PM)" style="color: #000;">Morning (9 AM - 12 PM)</option>
+                                                <option value="Afternoon (12 PM - 4 PM)" style="color: #000;">Afternoon (12 PM - 4 PM)</option>
+                                                <option value="Evening (4 PM - 8 PM)" style="color: #000;">Evening (4 PM - 8 PM)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="contact-form-group">
+                                        <p class="contact-label">Message *</p><textarea id="Example-Text"
+                                            name="Example-Text" maxlength="5000" data-name="Example Text"
+                                            placeholder="Tell us what needs to be fixed and your location." required=""
+                                            class="contact-input textarea w-input"></textarea>
+                                    </div>
+                                    <input type="submit" data-wait="Please wait..."
+                                        class="theme-button contact-button w-button contact-submit-btn" value="Send Message" />
+                                </form>
+                                <div class="contact-succes dark w-form-done">
+                                    <div>Thank you! Your submission has been received!</div>
+                                </div>
+                                <div class="contact-error dark w-form-fail">
+                                    <div>Oops! Something went wrong while submitting the form.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-image-box"><img
+                                src="images/emergency_services.jpg" loading="lazy"
+                                alt="Emergency service support"
+                                class="contact-image" referrerPolicy="no-referrer" />
+                            <div class="contact-list-box">
+                                <div class="contact-list"><img src="images/684fd14c463253b4fa04a964_location.avif"
+                                        loading="lazy" alt="" class="contact-list-icon" />
+                                    <p class="contact-list-text">Bhateliya, Mukteshwar, District Nainital, Uttarakhand - 263132</p>
+                                </div>
+                                <div class="contact-list mb-zero"><img
+                                        src="images/684fd14c4d892db0d33d31c1_phone-call.avif" loading="lazy" alt=""
+                                        class="contact-list-icon" />
+                                    <a href="tel:7500975067" class="contact-list-text-link w-inline-block">
+                                        <p class="contact-list-text link">7500975067, 7818878381, 7617717885</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="call-to-action">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="cta-wrapper">
+                        <div class="bg cta-bg"></div>
+                        <div class="cta-content">
+                            <div class="section-title-box center mb-zero">
+                                <div class="section-subtitle-box">
+                                    <div class="section-subtitle-icon light"></div>
+                                    <p class="section-subtitle light">Ready to Get Started?<br /></p>
+                                </div>
+                                <h2 class="section-title light">Get Fast Help From <span
+                                    class="section-title-style">Aadi Shakti</span></h2>
+                                <p class="section-text light">Call us when you need electrical, plumbing, or urgent
+                                    home service support.</p>
+                            </div>
+                            <div class="cta-btn-box">
+                                <a href="#Contact-Section"
+                                   
+                                    class="theme-button w-variant-cc17a125-6feb-8cd0-c66f-ae368b5c9d6d w-inline-block">
+                                    <div class="theme-button-content">
+                                            <div class="theme-button-text">Request a Visit</div>
+                                            <div class="theme-button-hover-text">Request a Visit</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="main-footer light">
+            <div class="footer-widgets-section">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="w-layout-grid footer-grid">
+                        <div class="footer-widget"><a href="/" aria-current="page"
+                                class="logo-link w-inline-block w--current"><img loading="lazy"
+                                    src="images/aadi_shakti_logo.jpg" alt="Aadi Shakti Logo" class="logo-icon" />
+                                <p class="logo-text">Aadi Shakti</p>
+                            </a>
+                            <p class="footer-text dark">Aadi Shakti Electrical &amp; Plumbing Services delivers
+                                reliable electrical work, plumbing repairs, and emergency support.</p>
+                            <div class="footer-location-box"><img loading="lazy"
+                                    src="images/67caceaa11f118840121a450_6419.avif" alt="Location pin icon"
+                                    class="footer-icon dark" />
+                                <p class="footer-location-text dark">Bhateliya, Mukteshwar, District Nainital, Uttarakhand - 263132</p>
+                            </div>
+                        </div>
+                        <div class="footer-widget two">
+                            <div class="footer-inner">
+                                <h4 class="footer-title dark">Quick links</h4>
+                                <div class="footer-links"><a href="/" aria-current="page"
+                                        class="footer-link dark w--current">Home</a><a href="#About-Section"
+                                        class="footer-link dark">About Us</a><a href="#Service-Section"
+                                        class="footer-link dark">Services</a><a href="#Contact-Section"
+                                        class="footer-link dark">Contact Us</a></div>
+                            </div>
+                            <div class="footer-inner">
+                                <h4 class="footer-title dark">Pages</h4>
+                                <div class="footer-links"><a href="/" aria-current="page"
+                                        class="footer-link dark w--current">Home</a><a href="/license" target="_blank"
+                                        class="footer-link dark">License</a><a href="/changelog" target="_blank"
+                                        class="footer-link dark">Changelog</a>
+                                    <a href="/style-guide" class="footer-link dark">Style Guide</a><a href="/404"
+                                        class="footer-link dark">Not Found</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-widget">
+                            <h4 class="footer-title two dark">Newsletters</h4>
+                            <p class="subscribe-text dark">Get Recent News and tips, updates or offers.</p>
+                            <div class="newsletter-form-block w-form">
+                                <form id="wf-form-Newsletters-Form" name="wf-form-Newsletters-Form"
+                                    data-name="Newsletters Form" method="get" class="newsletter-form"
+                                    data-wf-page-id="67c557f717dc36a702f39ae8"
+                                    data-wf-element-id="1d7cc0e3-4663-59ff-b92a-6a82590b316e"
+                                    data-turnstile-sitekey="0x4AAAAAAAQTptj2So4dx43e"><input
+                                        class="newsletter-input dark w-input" maxlength="256" name="Newsletter-Email"
+                                        data-name="Newsletter Email" placeholder="Your email address." type="email"
+                                        id="Newsletter-Email" required="" /><input type="submit"
+                                        data-wait="Please wait..." class="theme-button w-button" value="Subscribe" />
+                                </form>
+                                <div class="contact-succes w-form-done">
+                                    <div>Thank you! Your submission has been received!</div>
+                                </div>
+                                <div class="contact-error w-form-fail">
+                                    <div>Oops! Something went wrong while submitting the form.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom dark">
+                <div class="w-layout-blockcontainer container w-container">
+                    <div class="footer-bottom-outer">
+                        <p class="footer-copyright-text dark">© Copyright - <a href="https://www.instagram.com/adishakti_007/"
+                            target="_blank" class="copyright-link dark">Aadi Shakti Electrical &amp; Plumbing Services</a> | Created by <a
+                                href="https://www.lokeshdangwal.in/" target="_blank"
+                                class="copyright-link dark">Lokesh Dangwal</a></p>
+                        <div class="social-list two">
+                            <a href="https://www.facebook.com/" target="_blank"
+                                class="social-list-item dark w-inline-block">
+                                <div class="social-list-icon"></div>
+                            </a>
+                            <a href="https://linkedin.com/" target="_blank"
+                                class="social-list-item dark w-inline-block">
+                                <div class="social-list-icon"></div>
+                            </a>
+                            <a href="http://x.com/" target="_blank" class="social-list-item dark w-inline-block">
+                                <div class="social-list-icon"></div>
+                            </a>
+                            <a href="#" target="_blank" class="social-list-item dark w-inline-block">
+                                <div class="social-list-icon"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/SplitText.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script>
+        // Image fallback mapping for broken image IDs
+        const imageMapper = {
+            '694275dd6d937a230538c39a_menu.png': 'icon-menu.png',
+            '694275e3f84113c50d621545_close.png': 'icon-close.png',
+            '694a4b3ef08555f69c61276e_1.avif': 'avatar-1.avif',
+            '694a4b3ef08555f69c612770_2.avif': 'avatar-2.avif',
+            '694a4b3ef08555f69c612772_3.avif': 'avatar-3.avif',
+            '694a4b3ef08555f69c61276d_star.svg': 'star.svg',
+            '686e4a86d9f790183a6d8834_Vector.png': 'vector.png',
+            '694a532187474f170c627019_star.avif': 'star.avif',
+            '694cf6a2dcdcf9b71d6c7b50_Nighttime%20Urban%20Scene.avif': 'about-bg.avif',
+            '684fd14c463253b4fa04a964_location.avif': 'icon-location.avif',
+            '684fd14c4d892db0d33d31c1_phone-call.avif': 'icon-phone.avif',
+            '67cacba0f8d254e9456f92b9_pexels-cedric-fauntleroy-8154349.png': 'service-main-1.jpg',
+            '683054068c377aee9cbc2295_author-1.jpg': 'author.jpg',
+            '6870d0619019508f6a9b3a5f_tim-van-der-kuip-CPs2X8JYmS8-unsplash.jpg': 'service-main-2.jpg',
+            '67d95190ae2f9137dfb705c_67c94fea86ae445ac53d1a5a_image4.png': 'author.jpg',
+            '67cac8d2eec7d2034112a7e7_pexels-mikael-blomkvist-6483579%201.png': 'service-main-1.jpg',
+            '67d95198786f869b6ac6e1ac_67c94fdfc2bac85d6430d7cf_image1.png': 'author.jpg',
+            '67c96e0118545bd57f95608e_13.avif': 'icon-trophy.avif',
+            '67c96e025cdae2c97b0b0ebc_12.avif': 'icon-people.avif',
+            '67c96e04ecb8bc4767676cc0_9.avif': 'icon-rocket.avif',
+            '67c96e0225d31f30250560d6_14.avif': 'icon-globe.avif',
+            '67c96e030a4e55930a546210_10.avif': 'icon-marketing.avif',
+            '67c96e02c6866727bc8a4081_11.avif': 'icon-location.avif',
+            '694d14b97920384c9924c016_2.avif': 'project-2.avif',
+            '694d14eff888f5fd43768f08_1.avif': 'project-1.avif',
+            '694d14a5b3c12fe3ddaf002c_3.avif': 'project-3.avif',
+            '6870f7ebeccf3fc95b60dc71_svgviewer-output.svg': 'vector.png',
+            '694a6f6742acf7e82af6d6f9_Group.png': 'vector.png',
+            '67caceaa11f118840121a450_6419.avif': 'icon-location.avif',
+            '6870c8989d63bd36e1eb720e_pay-per-click.svg': 'icon-ppc.svg',
+            '6870c8b3ff3fffa236d03f72_master-plan.svg': 'icon-plan.svg',
+            '6870c8c11dd3dd84ec4c2372_discover.svg': 'icon-discover.svg',
+            '6870c8d1eca23be9cefdd4a6_ad-paid.svg': 'icon-ads.svg'
+        };
+
+        // Fix broken images by mapping old IDs to available images
+        function fixBrokenImages() {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                const src = img.getAttribute('src');
+                if (src && src.includes('images/')) {
+                    for (let [brokenId, fallback] of Object.entries(imageMapper)) {
+                        if (src.includes(brokenId)) {
+                            const newSrc = 'images/' + fallback;
+                            img.setAttribute('src', newSrc);
+                            img.onerror = function() { this.setAttribute('src', 'images/vector.png'); };
+                            break;
+                        }
+                    }
+                }
+            });
+        }
+
+        // Run immediately
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', fixBrokenImages);
+        } else {
+            fixBrokenImages();
+        }
+    </script>
+
+    <!-- Hide brand badge -->
+    <style>
+        .w-sammegh-badge {
+            display: none !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+        }
+
+        /* Center Project Cards in "Campaigns That Delivered Results" section */
+        .project-section .w-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            box-sizing: border-box;
+        }
+
+        .project-slider {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .project-mask {
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            overflow: hidden !important;
+            width: 100% !important;
+        }
+
+        .project-section .w-slider-mask {
+            display: flex !important;
+            justify-content: center !important;
+            overflow: hidden !important;
+            width: 100% !important;
+        }
+
+        .project-slide {
+            width: 33.333% !important;
+            flex-shrink: 0 !important;
+            padding: 0 12px;
+            box-sizing: border-box;
+        }
+
+        .project-block {
+            width: 100%;
+        }
+
+        .project-image {
+            height: 300px !important;
+            object-fit: cover;
+        }
+
+        .project-image-box {
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        /* Hide slides beyond the first 3 */
+        .project-slide:nth-child(n+4) {
+            display: none !important;
+        }
+
+        /* ===== MOBILE RESPONSIVE FOR PROJECT CARDS ===== */
+        @media screen and (max-width: 991px) {
+            .project-section .w-container {
+                padding: 0 20px;
+            }
+            .project-slide {
+                width: 50% !important;
+                padding: 0 8px;
+            }
+            .project-slide:nth-child(n+3) {
+                display: none !important;
+            }
+            .project-slide:nth-child(n+4) {
+                display: none !important;
+            }
+            .project-image {
+                height: 220px !important;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .project-section .w-container {
+                padding: 0 15px;
+            }
+            .project-section .w-slider-mask {
+                justify-content: flex-start !important;
+                flex-wrap: nowrap !important;
+                overflow-x: auto !important;
+                -webkit-overflow-scrolling: touch;
+                scroll-snap-type: x mandatory;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+            }
+            .project-section .w-slider-mask::-webkit-scrollbar {
+                display: none;
+            }
+            .project-slide {
+                width: 85% !important;
+                min-width: 280px !important;
+                flex-shrink: 0 !important;
+                padding: 0 10px;
+                scroll-snap-align: center;
+            }
+            .project-slide:nth-child(n+3),
+            .project-slide:nth-child(n+4) {
+                display: flex !important;
+            }
+            .project-image {
+                height: 180px !important;
+            }
+            .project-title {
+                font-size: 16px !important;
+            }
+            .project-text {
+                font-size: 13px !important;
+            }
+        }
+
+        @media screen and (max-width: 479px) {
+            .project-section .w-container {
+                padding: 0 10px;
+            }
+            .project-slide {
+                width: 90% !important;
+                min-width: 260px !important;
+                padding: 0 8px;
+            }
+            .project-image {
+                height: 160px !important;
+            }
+            .project-image-box {
+                border-radius: 15px;
+            }
+            .project-title {
+                font-size: 15px !important;
+            }
+            .project-text {
+                font-size: 12px !important;
+                line-height: 1.5;
+            }
+        }
+    </style>
+
+    <!-- Custom GSAP Animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Register ScrollTrigger
+            gsap.registerPlugin(ScrollTrigger);
+
+            // Hero section animations
+            gsap.fromTo('.hero-title',
+                { opacity: 0, y: 50 },
+                { opacity: 1, y: 0, duration: 1, ease: 'power3.out', delay: 0.2 }
+            );
+
+            gsap.fromTo('.hero-text',
+                { opacity: 0, y: 30 },
+                { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out', delay: 0.5 }
+            );
+
+            gsap.fromTo('.hero-btn-box',
+                { opacity: 0, y: 20 },
+                { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out', delay: 0.7 }
+            );
+
+            gsap.fromTo('.hero-rating-wrap',
+                { opacity: 0, y: 20 },
+                { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out', delay: 0.9 }
+            );
+
+            gsap.fromTo('.hero-images-wrapper',
+                { opacity: 0, scale: 0.95 },
+                { opacity: 1, scale: 1, duration: 1, ease: 'power3.out', delay: 0.3 }
+            );
+
+            gsap.fromTo('.section-subtitle-box',
+                { opacity: 0, x: -20 },
+                { opacity: 1, x: 0, duration: 0.6, ease: 'power3.out', delay: 0.1 }
+            );
+
+            // Marquee animation
+            gsap.fromTo('.marquee-section',
+                { opacity: 0 },
+                { opacity: 1, duration: 0.8, ease: 'power2.out', delay: 1 }
+            );
+
+            // Scroll-triggered animations for sections
+            gsap.utils.toArray('.section-title-box').forEach(function (box) {
+                gsap.fromTo(box,
+                    { opacity: 0, y: 50 },
+                    {
+                        opacity: 1, y: 0, duration: 0.8, ease: 'power3.out',
+                        scrollTrigger: {
+                            trigger: box,
+                            start: 'top 85%',
+                            toggleActions: 'play none none none'
+                        }
+                    }
+                );
+            });
+
+            // Service blocks animation
+            gsap.utils.toArray('.service-block').forEach(function (block, i) {
+                gsap.fromTo(block,
+                    { opacity: 0, y: 40 },
+                    {
+                        opacity: 1, y: 0, duration: 0.6, ease: 'power3.out', delay: i * 0.1,
+                        scrollTrigger: {
+                            trigger: block,
+                            start: 'top 85%',
+                            toggleActions: 'play none none none'
+                        }
+                    }
+                );
+            });
+
+            // About section animations
+            gsap.fromTo('.about-content-box',
+                { opacity: 0, x: -50 },
+                {
+                    opacity: 1, x: 0, duration: 0.8, ease: 'power3.out',
+                    scrollTrigger: {
+                        trigger: '.about-section',
+                        start: 'top 70%',
+                        toggleActions: 'play none none none'
+                    }
+                }
+            );
+
+            gsap.fromTo('.about-image-box',
+                { opacity: 0, x: 50 },
+                {
+                    opacity: 1, x: 0, duration: 0.8, ease: 'power3.out',
+                    scrollTrigger: {
+                        trigger: '.about-section',
+                        start: 'top 70%',
+                        toggleActions: 'play none none none'
+                    }
+                }
+            );
+
+            // Counter/Stats animations
+            gsap.utils.toArray('.counter-box').forEach(function (box, i) {
+                gsap.fromTo(box,
+                    { opacity: 0, scale: 0.9 },
+                    {
+                        opacity: 1, scale: 1, duration: 0.6, ease: 'back.out(1.2)', delay: i * 0.15,
+                        scrollTrigger: {
+                            trigger: box,
+                            start: 'top 85%',
+                            toggleActions: 'play none none none'
+                        }
+                    }
+                );
+            });
+
+            // Team member cards
+            gsap.utils.toArray('.team-block').forEach(function (block, i) {
+                gsap.fromTo(block,
+                    { opacity: 0, y: 30 },
+                    {
+                        opacity: 1, y: 0, duration: 0.5, ease: 'power3.out', delay: i * 0.1,
+                        scrollTrigger: {
+                            trigger: block,
+                            start: 'top 85%',
+                            toggleActions: 'play none none none'
+                        }
+                    }
+                );
+            });
+
+            // Testimonial blocks
+            gsap.utils.toArray('.testimonial-block').forEach(function (block, i) {
+                gsap.fromTo(block,
+                    { opacity: 0, y: 40 },
+                    {
+                        opacity: 1, y: 0, duration: 0.6, ease: 'power3.out', delay: i * 0.1,
+                        scrollTrigger: {
+                            trigger: block,
+                            start: 'top 85%',
+                            toggleActions: 'play none none none'
+                        }
+                    }
+                );
+            });
+
+            // Pricing cards
+            gsap.utils.toArray('.pricing-block').forEach(function (block, i) {
+                gsap.fromTo(block,
+                    { opacity: 0, y: 50 },
+                    {
+                        opacity: 1, y: 0, duration: 0.7, ease: 'power3.out', delay: i * 0.15,
+                        scrollTrigger: {
+                            trigger: block,
+                            start: 'top 85%',
+                            toggleActions: 'play none none none'
+                        }
+                    }
+                );
+            });
+
+            // Project slider
+            gsap.fromTo('.project-slider',
+                { opacity: 0, y: 30 },
+                {
+                    opacity: 1, y: 0, duration: 0.8, ease: 'power3.out',
+                    scrollTrigger: {
+                        trigger: '.project-slider',
+                        start: 'top 80%',
+                        toggleActions: 'play none none none'
+                    }
+                }
+            );
+
+            // CTA section
+            gsap.fromTo('.cta-section',
+                { opacity: 0, y: 40 },
+                {
+                    opacity: 1, y: 0, duration: 0.8, ease: 'power3.out',
+                    scrollTrigger: {
+                        trigger: '.cta-section',
+                        start: 'top 80%',
+                        toggleActions: 'play none none none'
+                    }
+                }
+            );
+
+            // Footer animation
+            gsap.fromTo('.main-footer',
+                { opacity: 0, y: 30 },
+                {
+                    opacity: 1, y: 0, duration: 0.6, ease: 'power3.out',
+                    scrollTrigger: {
+                        trigger: '.main-footer',
+                        start: 'top 90%',
+                        toggleActions: 'play none none none'
+                    }
+                }
+            );
+
+            // Contact form animation
+            gsap.fromTo('.contact-form-box',
+                { opacity: 0, x: 30 },
+                {
+                    opacity: 1, x: 0, duration: 0.7, ease: 'power3.out',
+                    scrollTrigger: {
+                        trigger: '.contact-section',
+                        start: 'top 70%',
+                        toggleActions: 'play none none none'
+                    }
+                }
+            );
+
+            console.log('Aadi Shakti GSAP animations initialized successfully!');
+
+            // Gallery View More/View Less toggle for Mobile
+            const galleryBtn = document.getElementById('gallery-toggle-btn');
+            const galleryBtnText = document.getElementById('gallery-btn-text');
+            if (galleryBtn && galleryBtnText) {
+                galleryBtn.addEventListener('click', function() {
+                    const allItems = document.querySelectorAll('.work-gallery-grid .work-gallery-item');
+                    
+                    // Check if any item has hidden-mobile class currently applied
+                    const isCollapsed = document.querySelector('.work-gallery-grid .work-gallery-item.hidden-mobile');
+                    
+                    if (isCollapsed) {
+                        // Show all
+                        allItems.forEach(item => {
+                            item.classList.remove('hidden-mobile');
+                        });
+                        galleryBtnText.innerText = 'View Less';
+                    } else {
+                        // Collapse back (hide items beyond index 3)
+                        allItems.forEach((item, index) => {
+                            if (index >= 4) {
+                                item.classList.add('hidden-mobile');
+                            }
+                        });
+                        galleryBtnText.innerText = 'View More';
+                        
+                        // Scroll back smoothly to work section to keep focus
+                        const workSection = document.querySelector('.project-section');
+                        if (workSection) {
+                            workSection.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
+                });
+            }
+
+            // Form interceptor for WhatsApp redirection
+            const contactForm = document.getElementById('wf-form-Contact-Form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    e.stopImmediatePropagation();
+                    
+                    const name = document.getElementById('First-Name') ? document.getElementById('First-Name').value : '';
+                    const phone = document.getElementById('Last-Name') ? document.getElementById('Last-Name').value : '';
+                    const service = document.getElementById('Service-Select') ? document.getElementById('Service-Select').value : '';
+                    const callingTime = document.getElementById('Calling-Time') ? document.getElementById('Calling-Time').value || 'Anytime' : 'Anytime';
+                    const message = document.getElementById('Example-Text') ? document.getElementById('Example-Text').value : '';
+                    
+                    const formattedText = `*New Service Booking - Aadi Shakti* 🛠️🔌💧\n\n` +
+                                          `👤 *Name:* ${name}\n` +
+                                          `📞 *Phone:* ${phone}\n` +
+                                          `🛠️ *Service Needed:* ${service}\n` +
+                                          `⏰ *Preferred Time:* ${callingTime}\n` +
+                                          `📝 *Message/Location:* ${message}`;
+                    
+                    const whatsappUrl = `https://api.whatsapp.com/send?phone=917500975067&text=${encodeURIComponent(formattedText)}`;
+                    
+                    // Open in new tab
+                    window.open(whatsappUrl, '_blank');
+                    
+                    // Show success block of Webflow form
+                    const successBlock = document.querySelector('.contact-succes');
+                    if (successBlock) {
+                        successBlock.style.display = 'block';
+                    }
+                    const formBox = document.querySelector('.contact-form');
+                    if (formBox) {
+                        formBox.style.display = 'none';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
