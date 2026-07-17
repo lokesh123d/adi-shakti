@@ -9,9 +9,10 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = 3000;
 
-// Check if build/dist directory exists, and serve from it
-const distPath = path.join(__dirname, 'dist');
-const staticPath = fs.existsSync(distPath) ? distPath : __dirname;
+// Check if in production and build/dist directory exists, and serve from it
+const staticPath = process.env.NODE_ENV === 'production' && fs.existsSync(path.join(__dirname, 'dist'))
+  ? path.join(__dirname, 'dist')
+  : __dirname;
 
 console.log(`Serving static files from: ${staticPath}`);
 
