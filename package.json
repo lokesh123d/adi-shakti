@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "node server.js",
-    "build": "echo 'No build step required'",
+    "build": "mkdir -p dist && cp -r css fonts images js index.html fix-images.js dist/",
     "lint": "echo 'No linting required'",
     "start": "node server.js"
   },
