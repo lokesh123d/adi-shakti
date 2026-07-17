@@ -2109,7 +2109,7 @@ textarea.w-select {
 
 @font-face {
     font-family: "Fa Brands 400";
-    src: url(../67c579e6d9516e36055cb7d4_fa-brands-400.ttf)format("truetype");
+    src: url(../fonts/fa-brands-400.ttf)format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap
@@ -2117,7 +2117,7 @@ textarea.w-select {
 
 @font-face {
     font-family: "Fa Solid 900";
-    src: url(../67c579e69727660aeaae6478_fa-solid-900.ttf)format("truetype");
+    src: url(../fonts/fa-solid-900.ttf)format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap
@@ -2125,7 +2125,7 @@ textarea.w-select {
 
 @font-face {
     font-family: "Fa 400";
-    src: url(../67c579e6fd025cbc3f855cc7_fa-regular-400.ttf)format("truetype");
+    src: url(../fonts/fa-regular-400.ttf)format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap
